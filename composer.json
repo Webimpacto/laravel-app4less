@@ -2,7 +2,8 @@
   "name": "webimpacto/laravel-app4less",
   "description": "Laravel Providers and DB Migration for App4Less APPs",
   "require": {
-    "webimpacto/app4less": "^1.0"
+    "webimpacto/app4less": "^1.0",
+    "whichbrowser/parser": "^2.0"
   },
   "license": "MIT",
   "authors": [
