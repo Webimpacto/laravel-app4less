@@ -1,0 +1,19 @@
+{
+  "name": "webimpacto/laravel-app4less",
+  "description": "Laravel Providers and DB Migration for App4Less APPs",
+  "require": {
+    "webimpacto/app4less": "^1.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pablo Martin",
+      "email": "pmartin@webimpacto.es"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Webimpacto\\LaravelApp4Less\\": "src"
+    }
+  },
+}
