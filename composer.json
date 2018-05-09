@@ -16,5 +16,12 @@
     "psr-4": {
       "Webimpacto\\LaravelApp4Less\\": "src"
     }
+  },
+  "extra": {
+  "laravel": {
+    "providers": [
+      "\\Webimpacto\\LaravelApp4Less\\Providers\\App4LessServiceProvider"
+    ]
   }
+}
 }

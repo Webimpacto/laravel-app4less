@@ -16,13 +16,19 @@ class App4lessSaveToken
 
         $existUserToken = App4Less::where(['id_user'=>Auth::id(),'token'=>$app_token])->first();
 
+
+
         if(Auth::check() && $app_token && $app_uuid && !$existUserToken){
+            $result = new \WhichBrowser\Parser(getallheaders());
 
             $app4less = new App4Less();
             $app4less->id_user = Auth::id();
             $app4less->token = $app_token;
             $app4less->uuid = $app_uuid;
             $app4less->user_agent = $_SERVER['HTTP_USER_AGENT'];
+            $app4less->manufacturer = $result->device->manufacturer;
+            $app4less->model = $result->device->model;
+            $app4less->os = $result->os->name;
 
             $app4less->save();
         }

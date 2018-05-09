@@ -13,6 +13,7 @@ class CreateApp4Less extends Migration
      */
     public function up()
     {
+
         Schema::create('app4less', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_user');
@@ -21,6 +22,7 @@ class CreateApp4Less extends Migration
             $table->string('user_agent');
             $table->string('manufacturer')->nullable();
             $table->string('model')->nullable();
+            $table->string('os')->nullable();
             $table->boolean('active')->default(1);
             $table->timestamps();
         });
