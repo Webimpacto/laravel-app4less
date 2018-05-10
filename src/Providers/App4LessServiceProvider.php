@@ -15,7 +15,8 @@ class App4LessServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadMigrationsFrom(__DIR__.'/../migrations/');
+        $this->loadMigrationsFrom(__DIR__.'/../../migrations/');
+        $this->mergeConfigFrom(__DIR__.'/../../config/app4less.php', 'app4less');
 
     }
     /**
