@@ -4,7 +4,7 @@ This package makes it easy to send app4less/reskyt push notifications with Larav
 
 ## Installation
 
-YYou can install the package via composer:
+You can install the package via composer:
 
 ``` bash
 composer require webimpacto/laravel-app4less
@@ -36,6 +36,14 @@ protected $middlewareGroups = [
 
 ],
 ```
+
+Set .env variables for you App user and App API KEY if you want to send Push Notifications
+
+``` php
+APP4LESS_USER=userapp
+APP4LESS_APIKEY=user_api_key
+```
+
 
 ## Usage
 
